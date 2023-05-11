@@ -5,6 +5,13 @@ import { AppRootProviders } from './providers'
 interface PropsWithSlot extends PropsWithChildren {
   headxx: React.ReactNode
 }
+
+export const generateMetadata = () => {
+  return {
+    title: 'Root Layout',
+  }
+}
+
 export default async function RootLayout(props: PropsWithSlot) {
   const { children, headxx } = props
 
